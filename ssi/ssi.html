@@ -1,0 +1,29 @@
+
+        <script>
+        // SSI (Server Side Includes) emulation
+        document.addEventListener('DOMContentLoaded', function() {
+            // Find all includes
+            const includes = document.querySelectorAll('[data-include]');
+            
+            // Process each include
+            Array.prototype.forEach.call(includes, function(include) {
+                const file = include.getAttribute('data-include');
+                if (file) {
+                    const xhr = new XMLHttpRequest();
+                    xhr.onreadystatechange = function() {
+                        if (this.readyState === 4) {
+                            if (this.status === 200) {
+                                include.outerHTML = this.responseText;
+                            } else if (this.status === 404) {
+                                include.outerHTML = '<!-- Error: Include file not found -->';
+                            }
+                            include.removeAttribute('data-include');
+                        }
+                    };
+                    xhr.open('GET', file, true);
+                    xhr.send();
+                }
+            });
+        });
+        </script>
+        

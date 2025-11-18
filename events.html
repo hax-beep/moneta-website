@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - MONETA 2025</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="js/navigation.js" defer></script>
+    <style>
+        .register-btn {
+            background: linear-gradient(135deg, #4a90e2, #1a5f9a);
+            color: white !important;
+            font-weight: 600;
+            padding: 0.5rem 1.5rem !important;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
+            border: none;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .register-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(74, 144, 226, 0.4);
+            background: linear-gradient(135deg, #5a9cec, #2a6faa);
+        }
+        @media (max-width: 992px) {
+            .register-btn {
+                margin-top: 1rem;
+                width: 100%;
+                text-align: center;
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Navigation will be inserted here by navigation.js -->
+    </header>
+    
+    <!-- Ticker Bar with Sponsors -->
+    <div class="ticker-bar">
+        <div class="ticker-content">
+            <span class="sponsor-item">
+                <span class="sponsor-logo">🏦</span>
+                <span class="sponsor-name">HDFC Bank</span>
+            </span>
+            <span class="sponsor-item">
+                <span class="sponsor-logo">💳</span>
+                <span class="sponsor-name">ICICI Bank</span>
+            </span>
+            <span class="sponsor-item">
+                <span class="sponsor-logo">🏛️</span>
+                <span class="sponsor-name">State Bank of India</span>
+            </span>
+            <span class="sponsor-item">
+                <span class="sponsor-logo">📊</span>
+                <span class="sponsor-name">Zerodha</span>
+            </span>
+            <span class="sponsor-item">
+                <span class="sponsor-logo">💰</span>
+                <span class="sponsor-name">Groww</span>
+            </span>
+            <span class="sponsor-item">
+                <span class="sponsor-logo">🎯</span>
+                <span class="sponsor-name">Angel One</span>
+            </span>
+            <span class="sponsor-item">
+                <span class="sponsor-logo">💼</span>
+                <span class="sponsor-name">Bajaj Finance</span>
+            </span>
+            <span class="sponsor-item">
+                <span class="sponsor-logo">🏢</span>
+                <span class="sponsor-name">Axis Bank</span>
+            </span>
+        </div>
+    </div>
+
+    <!-- Navigation will be inserted here by navigation.js -->
+    </nav>
+
+    <!-- Events Section -->
+    <section class="events-section">
+        <div class="container">
+            <h1 style="color: var(--dark-blue); text-align: center; font-size: 2.5rem; margin-top: 2rem;">Our Events</h1>
+            <div class="divider"></div>
+            <p style="text-align: center; font-size: 1.1rem; max-width: 800px; margin: 0 auto 3rem;">Discover the exciting events lined up for MONETA 2025 - Financial Literacy Festival</p>
+            
+            <div class="events-grid">
+                <!-- Event 1: Bullring -->
+                <div class="event-card">
+                    <div class="event-image" style="background: linear-gradient(135deg, #4a6fa5, #254e70);">
+                        <h3>Bullring</h3>
+                    </div>
+                    <div class="event-details">
+                        <span class="event-category">Stock Market Simulation</span>
+                        <h3>Bullring</h3>
+                        <p>Event which focuses on simulating the Stock market for younger audience, conducted in collaboration with National Stock Exchange (NSE).</p>
+                        <a href="#register" class="btn btn-primary">Register Now</a>
+                    </div>
+                </div>
+
+                <!-- Event 2: Beyond D Street -->
+                <div class="event-card">
+                    <div class="event-image" style="background-color: #1a99ce;">
+                        <span style="font-size: 3rem;">📈</span>
+                    </div>
+                    <div class="event-details">
+                        <span class="event-category">Investment Analysis</span>
+                        <h3>Beyond D Street</h3>
+                        <p>Event focusing on testing asset allocation & portfolio management skills.</p>
+                        <a href="#" class="event-link">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Event 3: Production Paradox -->
+                <div class="event-card">
+                    <div class="event-image" style="background-color: #b5bb10;">
+                        <span style="font-size: 3rem;">🏭</span>
+                    </div>
+                    <div class="event-details">
+                        <span class="event-category">Manufacturing</span>
+                        <h3>Production Paradox</h3>
+                        <p>Manufacturing, Product costing & pricing are the aspects covered under production paradox.</p>
+                        <a href="#" class="event-link">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Event 4: Mergers & Acquisitions -->
+                <div class="event-card">
+                    <div class="event-image" style="background-color: #1f73a6;">
+                        <span style="font-size: 3rem;">🤝</span>
+                    </div>
+                    <div class="event-details">
+                        <span class="event-category">Corporate Finance</span>
+                        <h3>Mergers & Acquisitions</h3>
+                        <p>Focuses on financial evaluation and structuring of M&A deals, including valuation models and deal justification.</p>
+                        <a href="#" class="event-link">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Event 5: Merchant in Making -->
+                <div class="event-card">
+                    <div class="event-image" style="background-color: #8e44ad;">
+                        <span style="font-size: 3rem;">💼</span>
+                    </div>
+                    <div class="event-details">
+                        <span class="event-category">Investment Banking</span>
+                        <h3>Merchant in Making</h3>
+                        <p>Event revolving around consulting, IPO preparations, and IPO roadshows in investment banking.</p>
+                        <a href="#" class="event-link">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Event 6: Deal & Seal -->
+                <div class="event-card">
+                    <div class="event-image" style="background-color: #27ae60;">
+                        <span style="font-size: 3rem;">🌐</span>
+                    </div>
+                    <div class="event-details">
+                        <span class="event-category">MUN</span>
+                        <h3>Deal & Seal</h3>
+                        <p>Model United Nations (MUN) simulation with a unique flair of finance.</p>
+                        <a href="#" class="event-link">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Event 7: CodeCrux -->
+                <div class="event-card">
+                    <div class="event-image" style="background-color: #2c3e50;">
+                        <span style="font-size: 3rem;">💻</span>
+                    </div>
+                    <div class="event-details">
+                        <span class="event-category">FinTech</span>
+                        <h3>CodeCrux</h3>
+                        <p>Coding & Fintech pivot of MONETA® - where technology meets finance.</p>
+                        <a href="#" class="event-link">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Event 8: A Study in Scarlet -->
+                <div class="event-card">
+                    <div class="event-image" style="background-color: #c0392b;">
+                        <span style="font-size: 3rem;">🕵️</span>
+                    </div>
+                    <div class="event-details">
+                        <span class="event-category">Awareness</span>
+                        <h3>A Study in Scarlet</h3>
+                        <p>Interactive event combining escape room and role-playing to enhance financial literacy and fraud awareness.</p>
+                        <a href="#" class="event-link">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Event 9: Big Brand Theory -->
+                <div class="event-card">
+                    <div class="event-image" style="background-color: #16a085;">
+                        <span style="font-size: 3rem;">🏷️</span>
+                    </div>
+                    <div class="event-details">
+                        <span class="event-category">Marketing</span>
+                        <h3>Big Brand Theory</h3>
+                        <p>Develop and implement branding and marketing strategies to create and promote successful brands.</p>
+                        <a href="#" class="event-link">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Event 10: Legal Finance and Corporate Governance -->
+                <div class="event-card">
+                    <div class="event-image" style="background-color: #7f8c8d;">
+                        <span style="font-size: 3rem;">⚖️</span>
+                    </div>
+                    <div class="event-details">
+                        <span class="event-category">Legal & Governance</span>
+                        <h3>Legal Finance & Corporate Governance</h3>
+                        <p>Focuses on legal considerations in financial processes and establishing good corporate governance.</p>
+                        <a href="#" class="event-link">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Event 11: Behavioral Finance and Accounting -->
+                <div class="event-card">
+                    <div class="event-image" style="background-color: #8e44ad;">
+                        <span style="font-size: 3rem;">🧠</span>
+                    </div>
+                    <div class="event-details">
+                        <span class="event-category">Behavioral Finance</span>
+                        <h3>Behavioral Finance & Accounting</h3>
+                        <p>Explores how brands attract audiences and how companies profit through behavioral economics.</p>
+                        <a href="#" class="event-link">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Event 12: Banking and Insurance -->
+                <div class="event-card">
+                    <div class="event-image" style="background-color: #27ae60;">
+                        <span style="font-size: 3rem;">🏦</span>
+                    </div>
+                    <div class="event-details">
+                        <span class="event-category">Banking</span>
+                        <h3>Banking and Insurance</h3>
+                        <p>Event designed to explain the intricacies of the banking and insurance industry.</p>
+                        <a href="#" class="event-link">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Event 13: Shipping Finance and SCM -->
+                <div class="event-card">
+                    <div class="event-image" style="background-color: #d35400;">
+                        <span style="font-size: 3rem;">🚢</span>
+                    </div>
+                    <div class="event-details">
+                        <span class="event-category">Logistics</span>
+                        <h3>Shipping Finance & SCM</h3>
+                        <p>Event focused on creating cost and time efficient supply chains for product delivery.</p>
+                        <a href="#" class="event-link">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MONETA 2025</h3>
+                    <p>Annual Financial Market Festival</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@moneta2025.com</p>
+                    <p>Phone: +91 XXXXXXXXXX</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MONETA. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

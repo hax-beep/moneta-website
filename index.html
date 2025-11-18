@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONETA 2025 - Financial Literacy Festival</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="js/navigation.js" defer></script>
+
+    <style>
+    
+/* Horizontal layout for Why MONETA 2025 section */
+.features-grid {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 1rem !important;
+    justify-content: center !important;
+}
+
+.features-grid .feature-card {
+    flex: 1 !important;
+    min-width: 250px !important;
+    max-width: 300px !important;
+    padding: 1.5rem !important;
+    margin: 0 !important;
+    text-align: center !important;
+    background: white !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.3s ease !important;
+    border: 2px solid var(--light-blue) !important;
+}
+
+.features-grid .feature-card:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.features-grid .feature-icon {
+    font-size: 2.5rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.features-grid .feature-card h3 {
+    font-size: 1.2rem !important;
+    margin-bottom: 0.5rem !important;
+    color: var(--dark-blue) !important;
+}
+
+.features-grid .feature-card p {
+    font-size: 0.95rem !important;
+    margin: 0 !important;
+    color: #666 !important;
+}
+
+@media (max-width: 768px) {
+    .features-grid {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    
+    .features-grid .feature-card {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+}
+
+</style>
+    <style>
+        .register-btn {
+            background: linear-gradient(135deg, #4a90e2, #1a5f9a);
+            color: white !important;
+            font-weight: 600;
+            padding: 0.5rem 1.5rem !important;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
+            border: none;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .register-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(74, 144, 226, 0.4);
+            background: linear-gradient(135deg, #5a9cec, #2a6faa);
+        }
+        @media (max-width: 992px) {
+            .register-btn {
+                margin-top: 1rem;
+                width: 100%;
+                text-align: center;
+                display: block;
+            }
+        }
+    </style>
+<style>
+/* Enhanced styles for the new home page content */
+.hero-stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+    padding: 2rem;
+    background: linear-gradient(135deg, var(--light-blue) 0%, var(--dark-blue) 100%);
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+}
+
+.stat-item {
+    flex: 1;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.feature-card.enhanced {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(135deg, var(--light-blue), var(--dark-blue)) border-box;
+}
+
+.feature-card.enhanced:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card.enhanced .feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.cta-box.enhanced {
+    background: linear-gradient(135deg, var(--dark-green), var(--light-green));
+    color: white;
+    padding: 3rem;
+    border-radius: 16px;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.cta-box.enhanced h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cta-box.enhanced p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-buttons .nav-btn.secondary {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.cta-buttons .nav-btn.secondary:hover {
+    background: white;
+    color: var(--dark-green);
+}
+
+@media (max-width: 768px) {
+    .hero-stats {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-buttons .nav-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+</style></head>
+<body>
+    <header>
+        <!-- Navigation will be inserted here by navigation.js -->
+    </header>
+    <div class="ticker-bar">
+        <div class="ticker-content">
+            <!-- Add logo emoji or image in the sponsor-logo span -->
+            <span class="sponsor-item">
+                <img src="images/sponsors/nse logo.jpeg" alt="NSE" class="sponsor-logo">
+                <span class="sponsor-name">NSE</span>
+            </span>
+            <span class="sponsor-item">
+                <img src="images/sponsors/Samco logo.png" alt="SAMCO" class="sponsor-logo">
+                <span class="sponsor-name">SAMCO</span>
+            </span>
+            <span class="sponsor-item">
+                <img src="images/sponsors/CEAT logo.png" alt="CEAT" class="sponsor-logo">
+                <span class="sponsor-name">CEAT</span>
+            </span>
+            <span class="sponsor-item">
+                <img src="images/sponsors/Mahindra_Finance_Logo.png" alt="Mahindra Finance" class="sponsor-logo">
+                <span class="sponsor-name">Mahindra Finance</span>
+            </span>
+            <span class="sponsor-item">
+                <img src="images/sponsors/IBS logo.png" alt="IBS" class="sponsor-logo">
+                <span class="sponsor-name">IBS</span>
+            </span>
+            <span class="sponsor-item">
+                <img src="images/sponsors/IIDE logo.png" alt="IIDE" class="sponsor-logo">
+                <span class="sponsor-name">IIDE</span>
+            </span>
+            <span class="sponsor-item">
+                <img src="images/sponsors/Nuvama logo.png" alt="Nuvama" class="sponsor-logo">
+                <span class="sponsor-name">Nuvama</span>
+            </span>
+            <span class="sponsor-item">
+                <img src="images/sponsors/Bank of Maharashtra logo.png" alt="Bank of Maharashtra" class="sponsor-logo">
+                <span class="sponsor-name">Bank of Maharashtra</span>
+            </span>
+            <span class="sponsor-item">
+                <img src="images/sponsors/Dominos logo.png" alt="Dominos" class="sponsor-logo">
+                <span class="sponsor-name">Dominos</span>
+            </span>
+        </div>
+    </div>
+
+    <style>
+        @keyframes heroGlow {
+            0% { 
+                filter: drop-shadow(0 0 20px rgba(0, 174, 239, 1))
+                      drop-shadow(0 0 40px rgba(0, 174, 239, 0.8))
+                      drop-shadow(0 0 80px rgba(0, 174, 239, 0.6))
+                      drop-shadow(0 0 120px rgba(0, 174, 239, 0.4));
+            }
+            50% { 
+                filter: drop-shadow(0 0 30px rgba(0, 174, 239, 1))
+                      drop-shadow(0 0 60px rgba(0, 174, 239, 1))
+                      drop-shadow(0 0 100px rgba(0, 174, 239, 0.8))
+                      drop-shadow(0 0 150px rgba(0, 174, 239, 0.6));
+            }
+            100% { 
+                filter: drop-shadow(0 0 20px rgba(0, 174, 239, 1))
+                      drop-shadow(0 0 40px rgba(0, 174, 239, 0.8))
+                      drop-shadow(0 0 80px rgba(0, 174, 239, 0.6))
+                      drop-shadow(0 0 120px rgba(0, 174, 239, 0.4));
+            }
+        }
+        .hero-logo {
+            position: relative;
+            animation: heroGlow 3s infinite ease-in-out;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+            z-index: 1;
+            transform: translateZ(0);
+            will-change: filter, transform;
+        }
+        .hero-logo:hover {
+            transform: scale(1.05) translateZ(0);
+            animation: heroGlow 1s infinite ease-in-out;
+        }
+        .hero-logo::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(0, 174, 239, 0.5) 0%, rgba(0, 174, 239, 0) 60%);
+            transform: translate(-50%, -50%) scale(1);
+            border-radius: 50%;
+            z-index: -1;
+            animation: pulseGlow 3s infinite ease-in-out;
+            pointer-events: none;
+            filter: blur(10px);
+        }
+        .hero-logo::after {
+            content: '';
+            position: absolute;
+            top: -20%;
+            left: -20%;
+            right: -20%;
+            bottom: -20%;
+            background: radial-gradient(circle at center, rgba(0, 174, 239, 0.6) 0%, rgba(0, 174, 239, 0) 50%);
+            border-radius: 50%;
+            z-index: -1;
+            transform: scale(1.2);
+            opacity: 0.9;
+            animation: innerGlow 2.5s infinite ease-in-out;
+            pointer-events: none;
+            filter: blur(5px);
+        }
+        @keyframes pulseGlow {
+            0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.9; }
+            50% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.7; }
+        }
+        @keyframes innerGlow {
+            0%, 100% { transform: scale(1.2); opacity: 0.9; }
+            50% { transform: scale(1.4); opacity: 0.7; }
+        }
+    </style>
+    <section class="hero">
+        <div class="container" style="text-align: center; padding: 40px 20px;">
+            <img src="./images/moneta-logo.png" alt="MONETA 2025" class="hero-logo" style="width: 300px;">
+            <h1 style="margin: 20px 0 0; font-size: 4rem; line-height: 1.2; text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);">MONETA 2025</h1>
+            <h2 class="subtitle"><a href="theme.html" style="color: inherit; text-decoration: none; transition: all 0.3s ease; border-bottom: 2px solid transparent;" onmouseover="this.style.borderBottomColor='#1a5f9a'" onmouseout="this.style.borderBottomColor='transparent'">"Symphony of Financial Shift"</a></h2>
+            <p class="tagline">India's largest financial market based event organized at PAN-India Level</p>
+            <div class="hero-buttons">
+                <a href="#register" class="nav-btn register-btn">Register Now</a>
+                <a href="#learn-more" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Why MONETA 2025?</h2>
+            <div class="divider"></div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎓</div>
+                    <h3>Expert-Led Sessions</h3>
+                    <p>Learn from industry leaders and financial experts who are shaping the future of finance.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3>Networking</h3>
+                    <p>Connect with like-minded individuals and build valuable professional relationships.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💡</div>
+                    <h3>Innovative Learning</h3>
+                    <p>Engage in hands-on workshops and interactive sessions for practical knowledge.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    
+
+    <section class="page-content">
+        <div class="container">
+            <div class="content-box">
+                <h2>🌟 Welcome to MONETA 2025</h2>
+                <div class="divider"></div>
+                <p>Experience India's Premier Financial Literacy Festival - where knowledge meets opportunity, and dreams transform into financial wisdom.</p>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Expert Speakers</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10,000+</div>
+                        <div class="stat-label">Participants</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3 Days</div>
+                        <div class="stat-label">Transformative Learning</div>
+                    </div>
+                </div>
+
+                <h3>✨ What Awaits You at MONETA 2025</h3>
+                <div class="features-grid">
+                    <div class="feature-card enhanced">
+                        <div class="feature-icon">🎯</div>
+                        <h4>Expert Sessions</h4>
+                        <p>Learn from industry leaders, financial experts, and successful entrepreneurs who share their insights and strategies for financial success.</p>
+                    </div>
+                    <div class="feature-card enhanced">
+                        <div class="feature-icon">🚀</div>
+                        <h4>Interactive Workshops</h4>
+                        <p>Hands-on learning experiences designed to build practical financial skills through real-world scenarios and case studies.</p>
+                    </div>
+                    <div class="feature-card enhanced">
+                        <div class="feature-icon">🏆</div>
+                        <h4>Competitions & Challenges</h4>
+                        <p>Test your financial knowledge and win exciting prizes in our various competitions designed for all skill levels.</p>
+                    </div>
+                    <div class="feature-card enhanced">
+                        <div class="feature-icon">🤝</div>
+                        <h4>Networking Opportunities</h4>
+                        <p>Connect with like-minded individuals, mentors, and industry professionals who can guide your financial journey.</p>
+                    </div>
+                    <div class="feature-card enhanced">
+                        <div class="feature-icon">📚</div>
+                        <h4>Resource Hub</h4>
+                        <p>Access comprehensive learning materials, tools, and resources to continue your financial education beyond the festival.</p>
+                    </div>
+                    <div class="feature-card enhanced">
+                        <div class="feature-icon">💡</div>
+                        <h4>Innovation Showcase</h4>
+                        <p>Discover the latest fintech innovations and digital solutions that are reshaping the financial landscape.</p>
+                    </div>
+                </div>
+
+                <div class="cta-box enhanced">
+                    <h3>🎉 Be Part of Something Extraordinary</h3>
+                    <p>Join thousands of participants on this transformative journey towards financial empowerment. Whether you're a student, professional, or educator, MONETA 2025 has something valuable for everyone.</p>
+                    <div class="cta-buttons">
+                        <a href="#register" class="nav-btn register-btn primary">Register Now</a>
+                        <a href="#schedule" class="nav-btn secondary">View Schedule</a>
+                    </div>
+                </div>
+</div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MONETA 2025</h3>
+                    <p>India's Largest financial Market fest</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="events.html">Events</a>
+                    <a href="speakers.html">Speakers</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: podarmoneta.marketing@gmail.com</p>
+                    <p>Phone: +91 90041 16595</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MONETA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
