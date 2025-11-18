@@ -25,11 +25,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
             </a>
             
-            <!-- Mobile menu button -->
-            <div class="mobile-menu-btn">
-                <span></span>
-                <span></span>
-                <span></span>
+            <!-- Mobile menu button (uses .hamburger so it matches styles.css) -->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
             
             <!-- Navigation links -->
@@ -57,14 +57,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Mobile menu toggle functionality
-    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const mobileMenuBtn = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
-    
+
     if (mobileMenuBtn) {
         mobileMenuBtn.addEventListener('click', function() {
             this.classList.toggle('active');
             navLinks.classList.toggle('active');
-            
+
             // Toggle body scroll when menu is open
             if (this.classList.contains('active')) {
                 document.body.style.overflow = 'hidden';
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.body.style.overflow = 'auto';
             }
         });
-        
+
         // Close menu when clicking on a nav link
         document.querySelectorAll('.nav-link, .nav-btn').forEach(link => {
             link.addEventListener('click', function() {
@@ -113,14 +113,16 @@ document.addEventListener('DOMContentLoaded', function() {
         if (window.innerWidth > 1024) {
             // On desktop, ensure menu is visible and reset mobile styles
             if (navLinks) {
-                navLinks.style.display = 'flex';
-                navLinks.style.transform = 'none';
+                navLinks.classList.remove('active');
+                // clear any inline styles that might have been set
+                navLinks.style.display = '';
                 document.body.style.overflow = 'auto';
             }
         } else {
-            // On mobile, ensure proper initial state
+            // On mobile, rely on CSS to hide/show the menu via the .active class
             if (navLinks && !navLinks.classList.contains('active')) {
-                navLinks.style.display = 'none';
+                navLinks.classList.remove('active');
+                navLinks.style.display = '';
             }
         }
     }
